@@ -20,6 +20,6 @@ driver.maximize_window()
 driver.find_element_by_css_selector('.btn.popup-close').click()
 
 #Close the driver
-# driver.close()
+driver.close()
 
 #END
