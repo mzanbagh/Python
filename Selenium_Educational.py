@@ -11,15 +11,15 @@ from selenium import webdriver
 #the instance of Chrome WebDriver is created 
 driver = webdriver.Chrome(executable_path="C:\Program Files (x86)\Google\Chrome\chromedriver.exe")
 #getting website to the driver
-driver.get("http://www.nytimes.com")
+driver.get("https://sundialhomeproducts.com/")
 
 #maximizing window
 driver.maximize_window()
 
 #Take and save screen shot as png file
-driver.save_screenshot("nytimes_snapshot.png")
+driver.find_element_by_css_selector('.btn.popup-close').click()
 
 #Close the driver
-driver.close()
+# driver.close()
 
 #END
